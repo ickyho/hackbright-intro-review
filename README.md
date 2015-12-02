@@ -1,4 +1,7 @@
 #Midway Practice Exercises
+## Fork and Clone
+Fork the repo then make a local clone!  Make sure to test all your code and commit your work as you go.
+
 ##Types
 *Do these exercises in a file called `01-types.py` in this repository.  Use comments to record which question you are answering, and for text answers.*
 
@@ -42,8 +45,8 @@ e.g. “Rachel is 61.5 inches tall.”
 
 1. Create a tuple of the primary colors red, yellow, and blue.
 	1. Access the color blue using two different methods.
-	2. Create a tuple called secondary_colors with orange, green, and purple
-	3. Create a new tuple called all_colors that contains all the colors. Create this tuple by concatenating the primary_colors and secondary_colors tuples
+	2. Create a tuple called `secondary_colors` with orange, green, and purple
+	3. Create a new tuple called `all_colors` that contains all the colors. Create this tuple by concatenating the `primary_colors` and `secondary_colors` tuples
 2. Create a tuple called `full_name` that contains your first name and last name. 
 	1. Convert the `full_name` tuple to a list.
 	2. Reverse the `full_name` list so that it is last name, first name.
@@ -53,7 +56,7 @@ e.g. “Rachel is 61.5 inches tall.”
 
 1. Create a function called `convert_to_seconds` that has parameters `hours`, `minutes`, and `seconds`, and returns the value in seconds.
 2. Create a function called `convert_to_hours` that takes in a value, in seconds, and returns a tuple in the form `(hours, minutes, seconds)`.
-	1. Create a function called print_time that takes in a tuple from `convert_to_hours` and prints the string `"Hours: [hours], Minutes: [minutes], Seconds: [seconds]"`
+	1. Create a function called `print_time` that takes in a tuple from `convert_to_hours` and prints the string `"Hours: [hours], Minutes: [minutes], Seconds: [seconds]"`
 	e.g. `print_time((4, 12, 58))	⇒	"Hours: 4, Minutes: 12, Seconds: 58"`
 3. Create a function called `convert_to_inches` that has parameters `feet` and `inches`, and returns the value in inches.
 4. Create a function called `convert_to_feet` that takes a parameter in inches and returns a tuple in the form (feet, inches). 
@@ -68,3 +71,27 @@ e.g. “Rachel is 61.5 inches tall.”
 ##Dictionaries
 *Do these exercises in a file called `06-dictionaries.py` in this repository.  Use comments to record which question you are answering, and for text answers.*
 
+1. Write a function called `parse_groceries` that takes in a string of the form `"item:apples,quantity:4,price:1.50"` and returns a dictionary of the form `{ 'item':'apples'
+,'quantity':4,'price':1.50 }`.
+2. Write another function called `calculate_itemized` that takes in a list of dictionary of the form above and prints out the total for each item, and then the total of all the items at the end.
+
+e.g.
+
+```
+grocery_bill = [
+	{ 'item':'apples','quantity':4,'price':1.50 }, 
+	{ 'item':'bananas','quantity':3,'price':4 }
+]
+calculate_itemized(grocery_bill)
+```
+
+should print
+
+```
+apples: $6
+bananas: $12
+total: $18
+```
+
+## Push your work
+Push everything back up to the fork (make sure you've committed everything!).  If you'd like feedback on your work, send Sarah an email with the link to your fork.
