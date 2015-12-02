@@ -71,16 +71,15 @@ e.g. “Rachel is 61.5 inches tall.”
 ##Dictionaries
 *Do these exercises in a file called `06-dictionaries.py` in this repository.  Use comments to record which question you are answering, and for text answers.*
 
-1. Write a function called `parse_groceries` that takes in a string of the form `"item:apples,quantity:4,price:1.50"` and returns a dictionary of the form `{ 'item':'apples'
-,'quantity':4,'price':1.50 }`.
+1. Write a function called `parse_groceries` that takes in a string of the form `"item:apples,quantity:4,price:1.50"` and returns a dictionary of the form `{ 'item':'apples', 'quantity':4, 'price':1.50 }`.
 2. Write another function called `calculate_itemized` that takes in a list of dictionary of the form above and prints out the total for each item, and then the total of all the items at the end.
 
 e.g.
 
 ```
 grocery_bill = [
-	{ 'item':'apples','quantity':4,'price':1.50 }, 
-	{ 'item':'bananas','quantity':3,'price':4 }
+	{ 'item':'apples', 'quantity':4, 'price':1.50 }, 
+	{ 'item':'bananas', 'quantity':3, 'price':4 }
 ]
 calculate_itemized(grocery_bill)
 ```
