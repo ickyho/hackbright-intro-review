@@ -137,6 +137,16 @@ crazy_count_while(10)
 crazy_count_while(100)
 
 7. Create a function that counts and returns the number of unique letters in your full name. It should take in your first and last name as arguments and return an integer.
+- full_name = "vicky ho"
+def count_letters(full_name):
+    letter_counts = {}
+    for letter in full_name:
+        if(letter not in letter_counts):
+            letter_counts[letter]=1
+        else:
+            letter_counts[letter]+=1
+    return letter_counts
+print count_letters(full_name)
 
 ##Dictionaries
 *Do these exercises in a file called `06-dictionaries.py` in this repository.  Use comments to record which question you are answering, and for text answers.*
